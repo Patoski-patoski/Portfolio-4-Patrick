@@ -1,31 +1,89 @@
 :root {
-  /* font-size: 19px; */
+  --color-primary: #1a4d2e;
+  --color-secondary: #ff9f29;
+  --color-tertiary: #FAF3E3;
+
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+
 }
 
 body {
-  background-color: #1a4d2e;
+  background-color: var(--color-primary);
   color: #000;
   font-family: Poppins, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
-a{ 
+nav a{ 
     transition: 300ms ease all;
     color: #000;
     text-decoration: none;
 }
 
-a:hover{
-    color: #FF9F29;
-    transition: 1.0s ease-out;
-    margin-top: 0.2rem;
+a{
+  text-decoration: none;
+  color: #000;
+}
 
+
+a:hover{
+    color: var(--color-tertiary);
+    transition: 1.0s ease-out;
+    margin-top: 0.20rem;
     
+}
+
+a:active{
+    color:var(--color-tertiary);
+    transition: 1.0s ease-out;
+
+
+}
+
+#others{
+  margin-top: 11rem;
+  display: flex;
+  gap: 7rem;
+  justify-content: flex-start;
+  
+}
+
+
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.6;
+    /* height: 100%; */
+    object-fit: cover;
+    z-index: -2;
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secondary);
+    mix-blend-mode: overlay;
+}
+
+#pound{
+  font-weight: 400;
 }
 
 nav#display{
@@ -34,6 +92,7 @@ nav#display{
 
 nav#noDisplay{
   display: block;
+
 }
 
 ul, li{
@@ -43,11 +102,28 @@ ul, li{
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+div.others{
+  display: flex;
+  justify-content:start;
+  transition: 1.0s ease-out;
+  margin-top: 4rem;
+}
+
+button#big{
+  padding: 0.5rem;
+  border-radius: 7px;
+  background-color: var(--color-primary);
+
+}
+
+h1, h2, h3, h4, h5, h6, a {
 font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  margin: 0;
+  margin-top: 1rem;
 }
+
+
 
 .container {
   width: 100%;
@@ -87,21 +163,21 @@ img#image1 {
 }
 
 
-.fa-arrow-down{
+.para p{
+    background-color: var(--color-secondary);
+    transition: 1.0s ease-out;
+    padding: 2rem;
+    border-radius: 16px;
+
+    margin-top: 9rem;
     
 }
 
-
-
-
-    /* background-color: #FF9F29;
-    padding-bottom: 30vw;
-    padding: 2em;
-    border-radius: 12px; */
-
-
-/* color: #FF9F29;
-   color: #000;
-   color: #FAF3E3;
-  background-color: #1A4D2E;
- */
+.para p:hover{
+    background-color: var(--color-tertiary);
+    transition: 1.0s ease-in;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-top: 9rem;
+    
+}
