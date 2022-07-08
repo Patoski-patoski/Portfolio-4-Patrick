@@ -13,78 +13,90 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <link href="https://bit.ly/3ONBdwf" rel="stylesheet" />
-
-    <link href="https://bit.ly/3nDKJpQ" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
-      href="https://bit.ly/3NLv5Di"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <title>Portfolio | Okafor Patrick Chibuike</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="index"
     onmousemove="myFunction()"
     onclick="myFunction()"
     onload="myFunction();"
   >
-    <div class="over">
-      <video src="/tw_GPJZZQtu-R1rySNK.mp4" loop muted b autoplay></video>
-      <div class="overlay"></div>
-
-      <div class="container">
-        <nav id="first-nav">
-          <div>
-            <h2>Patrick's Portfolio</h2>
-
-            <h1 id="demo"></h1>
-            <h2 id="greet"></h2>
-          </div>
-
-          <nav id="home-display">
-            <ul>
-              <li><a id="index" class="active" href="index.html">Home</a></li>
-              <li><a id="about" href="about.html">About</a></li>
-              <li><a id="contact" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-
-          <div class="box">
-            <img src="/_DSC7648_1.jpg" alt="" id="image1" />
-          </div>
-        </nav>
-      </div>
-
-      <div class="container">
-        <div class="para">
-          <p>
-            I am a Website Designer and engineer. Ii work with HTML, CSS, and
-            JavaScript to create a website that is responsive and user friendly.
-            I have a passion for creating clean and simple websites. I have a
-            strong background in web development and I am currently working on
-            my portfolio.
-          </p>
-          
+    <div class="container">
+      <nav id="first-nav">
+        <div>
+          <h2>Patrick's Portfolio</h2>
+          <h1 id="demo"></h1>
+          <h2 id="greet"></h2>
         </div>
 
-        <div class="para">
-          <p>
- <a href="https://twitter.com/codesbypatrick"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-hashnode"></i></a>
-          </p>
+        <nav class="display">
+          <ul>
+            <li><a id="home" href="home.html">Home</a></li>
+            <li><a id="about" href="about.html">About</a></li>
+            <li><a id="contact" href="contact.html">Contact</a></li>
+            <li><a id="index" href="index.html"></a></li>
 
+          </ul>
+        </nav>
 
         
+      </nav>
+
+      <main onmousemove="myView()" class="cover">
+        <div class="cover-text">
+          <h1>Welcome to my Portfolio</h1>
+          
+          <p>
+            I am a Frontend Engineer with passion for creating beautiful and
+            functional website.
+          </p><br>
+          <p>I am also a Technical writer, Copywriter and Content Creator</p><br>
+
+          <a onmousemove="popUp()" onmouseover="myView()" href="#" id="linkOne">
+            <button id="button1"><a href="home.html">Get In Touch</a></button>
+          </a>
+
+          <p onmousemove="popUp()" id="demo2"></p>
+
+        </div>
+      </main>
+
+      
+        <h2>MY NAME IS</h2>
+        <p id="pound">
+          Okafor Patrick. I live in Nigeria. Thanks for dropping by, I look forward to working with you.
+        </p>
+
+        <h4>Check me out:</h4>
+      
+
+
+      <div id="others">
+
+        <a href="https://twitter.com/codesbypatrick"><i class="fa-brands fa-twitter"> twitter</i></a>
+        <a href="https://github.com/patoski-patoski"><i class="fa-brands fa-github"> github</i></a>
+        <a href="https://github.com/patoski-patoski"><i class="fa-brands fa-linkedin"> linkedin</i></a>
+        <a href="#"><i class="fa-brands fa-hashnode"> hashnode</i></a>
+
+      </div>
 
       <script src="script.js"></script>
-   
+    </div>
   </body>
 </html>

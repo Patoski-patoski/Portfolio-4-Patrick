@@ -16,24 +16,25 @@ function myFunction() {
   document.getElementById("demo").innerHTML = time;
 }
 function myView() {
-  const linkOne = document.getElementById("linkOne");
-  linkOne.addEventListener("mouseover", function () {
+  const button1 = document.getElementById("button1");
+  button1.addEventListener("mouseover", function () {
     let hello = document.getElementById("demo2");
-    hello.innerHTML = "Hello! Hover me";
-
-    hello.onmouseover = function () {
+    hello.innerHTML = "Hello! Hover me or click my parent";
+    hello.style.color = "#ff9f29";
+    button1.onclick = function () {
+    let appear = document.querySelector(".display");
+    appear.style.display = "block";
+    };
+      hello.onmousemove = function () {
       document.getElementById("demo2").style.color = "#ff9f29";
-      let appear = document.getElementById("display");
+      let appear = document.querySelector(".display");
       appear.style.display = "block";
     
     };
-
-      linkOne.onclick = function () {
-        document.getElementById("demo2").style.color = "#ff9f29";
-        let appear = document.getElementById("display");
-        appear.style.display = "block";
-        
-      };
   });
+
+  
+
+      
 }
 
