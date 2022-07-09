@@ -1,8 +1,8 @@
 let time = new Date();
 let realTime = document.getElementById('greet').innerHTML = time.getHours();
 
-if (realTime ==0 && realTime < 12) {
-  document.getElementById('greet').innerHTML = 'Good Morning,';
+if (realTime >= 00 && realTime < 12) {
+  document.getElementById('greet').innerHTML = 'Good morning,';
   
 } else if (realTime >= 12 && realTime < 18) {
   document.getElementById('greet').innerHTML = 'Good Afternoon,';
@@ -37,4 +37,7 @@ function myView() {
 
       
 }
+
+
+
 
