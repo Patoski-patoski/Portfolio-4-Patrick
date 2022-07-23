@@ -18,9 +18,10 @@ switch (new Date().getDay()) {
     greeting = "Today is Thursday";
     break;
   case 5:
-    greeting = "Yo! I'ts Friyay-Friday";
+    greeting = "Yo! It's Friday";
+    break
   case 6:
-    greeting = "Saturday is the coolest week ever";
+    greeting = "Saturday is the coolest weekday ever";
     break;
 }
 
@@ -28,9 +29,9 @@ let time = new Date();
 let realTime = (document.getElementById("greet").innerHTML = time.getHours());
 
 if (realTime >= 00 && realTime < 12) {
-  document.getElementById("greet").innerHTML = "Good morning,";
+  document.getElementById("greet").innerHTML = `Good morning, ${greeting}`;
 } else if (realTime >= 12 && realTime < 18) {
-  document.getElementById("greet").innerHTML = "Good Afternoon,";
+  document.getElementById("greet").innerHTML = `Good afternoon, ${greeting}`;
 } else {
   document.getElementById("greet").innerHTML = `Good evening, ${greeting}`;
 }

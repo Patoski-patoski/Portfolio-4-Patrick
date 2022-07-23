@@ -1,3 +1,3 @@
 # my-Portfolio
 
-Want to know what i can do? Check this personal portfolio. Thanks for dropping by.⛳
+I am creating a porfolio with what i've been learning with JavaScript. Dynamic and Passion.⛳

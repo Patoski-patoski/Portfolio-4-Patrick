@@ -2,6 +2,7 @@
   --color-primary: #1a4d2e;
   --color-secondary: #ff9f29;
   --color-tertiary: #FAF3E3;
+  
 
 }
 
@@ -171,6 +172,7 @@ img#image1 {
 
 .para p{
     background-color: var(--color-secondary);
+    background: linear-gradient(to bottom, var(--color-secondary), var(--color-tertiary));
     transition: 0.5s ease-out;
     transition-delay: 2.0s ease-out;
     padding: 2rem;
